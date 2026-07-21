@@ -34,7 +34,25 @@ python -m pip install -r requirements-dev.txt
 python main.py
 ```
 
+## License
+
+WoWidget is licensed under the GNU General Public License v3.0.
+
+You are free to use, modify, and redistribute this software under the terms of the GPLv3.
+
+The WoWidget name, logo, branding, documentation, screenshots, and other original artwork remain
+the property of their respective copyright holders and are not licensed for reuse except as
+permitted by law or with permission.
+
 ## Disclaimer
 
-WoWidget is a fan-built project and is not affiliated with or endorsed by
-Blizzard Entertainment or Discord.
+WoWidget is an independent fan project.
+
+World of Warcraft®, Blizzard Entertainment®, and Discord® are trademarks of their respective owners.
+
+WoWidget is not affiliated with, endorsed by, or sponsored by Blizzard Entertainment or Discord.
+
+# WoWidget
+# Copyright (C) 2026 Austin Brownell
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
