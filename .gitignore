@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+
+# Virtual environments
+.venv/
+.docs-venv/
+venv/
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+*.secret
+secrets/
+credentials/
+.dev.vars
+
+# Local databases and application state
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+WoWidget.db
+generated/
+.pyinstaller/
+__pyinstaller__/
+
+# Build and release output
+build/
+dist/
+installer/Output/
+*.exe
+*.msi
+*.iss.bak
+
+# Cloudflare local state
+cloudflare/worker/.wrangler/
+cloudflare/worker/node_modules/
+
+# IDE and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+logs/
+tmp/
+temp/
+
+# MkDocs output
+site/

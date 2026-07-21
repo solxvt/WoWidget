@@ -1,0 +1,40 @@
+{% extends "main.html" %}
+
+{% block htmltitle %}
+  <title>404 — Page Not Found | {{ config.site_name }}</title>
+{% endblock %}
+
+{% block content %}
+<section class="ww-404" aria-labelledby="ww-404-title">
+  <div class="ww-404__content">
+    <span class="ww-404__code">404</span>
+
+    <h1 id="ww-404-title">
+      This page wandered into the Twisting Nether.
+    </h1>
+
+    <p class="ww-404__description">
+      The page you were looking for may have moved, no longer exists,
+      or was never summoned in the first place.
+    </p>
+
+    <div class="ww-404__actions">
+      <a class="md-button md-button--primary" href="{{ config.site_url | default(nav.homepage.url, true) }}">
+        Return Home
+      </a>
+
+      <button
+        class="md-button"
+        type="button"
+        onclick="document.querySelector('[data-md-component=&quot;search&quot;] label, .md-search__icon')?.click()"
+      >
+        Search Documentation
+      </button>
+    </div>
+
+    <p class="ww-404__hint">
+      Try the documentation search or return to the WoWidget homepage.
+    </p>
+  </div>
+</section>
+{% endblock %}

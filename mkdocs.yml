@@ -1,0 +1,105 @@
+site_name: WoWidget
+site_description: Display your World of Warcraft character on your Discord profile.
+site_author: Sol
+site_url: https://solxvt.github.io/WoWidget/
+
+repo_url: https://github.com/solxvt/WoWidget
+repo_name: solxvt/WoWidget
+edit_uri: ""
+
+copyright: Copyright &copy; 2026 WoWidget
+
+theme:
+  name: material
+  custom_dir: overrides
+
+  palette:
+    # Default (Dark)
+    - scheme: slate
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+    # Optional Light Theme
+    - scheme: default
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+  font:
+    text: Inter
+    code: Roboto Mono
+
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.tooltips
+
+nav:
+  - Home: index.md
+
+  - Getting Started:
+      - Installation: getting-started/installation.md
+      - Blizzard Setup: getting-started/blizzard-setup.md
+      - Discord Setup: getting-started/discord-setup.md
+      - Widget Setup: getting-started/widget-editor.md
+      - Application Setup: getting-started/application-setup.md
+
+  - Using WoWidget:
+      - Character Selection: using-wowidget/character-selection.md
+      - Portrait Studio: using-wowidget/portrait-studio.md
+      - Updating Your Widget: using-wowidget/updating-widget.md
+
+  - Reference:
+      - Widget Variables: reference/widget-variables.md
+      - FAQ: reference/faq.md
+
+  - Support:
+      - Troubleshooting: support/troubleshooting.md
+
+  - About: about.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - def_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/javascripts/docs.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/solxvt/WoWidget
+      name: WoWidget on GitHub

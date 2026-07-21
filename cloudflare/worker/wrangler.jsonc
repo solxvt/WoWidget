@@ -1,0 +1,25 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "wowidget-portrait-upload",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-07-13",
+
+  "d1_databases": [
+    {
+      "binding": "INSTALLATIONS",
+      "database_name": "wowidget-installations",
+      "database_id": "828358e0-9fcc-4158-a946-e6a5e0b97bbc"
+    }
+  ],
+
+  "r2_buckets": [
+    {
+      "binding": "PORTRAITS",
+      "bucket_name": "wowidget-portraits"
+    }
+  ],
+
+  "vars": {
+    "PUBLIC_BASE_URL": "https://pub-a0932ef3923a4020822651bac823465b.r2.dev"
+  }
+}

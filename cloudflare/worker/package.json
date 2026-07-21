@@ -1,0 +1,18 @@
+{
+  "name": "wowidget-upload-worker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Authenticated portrait upload service for WoWidget.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "check": "tsc --noEmit",
+    "db:migrate:local": "wrangler d1 migrations apply INSTALLATIONS --local",
+    "db:migrate:remote": "wrangler d1 migrations apply INSTALLATIONS --remote"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5",
+    "typescript": "^5",
+    "wrangler": "^4"
+  }
+}

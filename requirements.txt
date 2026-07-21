@@ -1,0 +1,5 @@
+PySide6>=6.8,<7
+Pillow>=11,<13
+requests>=2.32,<3
+keyring>=25,<26
+certifi>=2025.1.31

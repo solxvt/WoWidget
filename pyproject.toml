@@ -1,0 +1,29 @@
+[tool.black]
+line-length = 88
+target-version = ["py314"]
+extend-exclude = '''
+/(
+    \.git
+  | \.venv
+  | \.docs-venv
+  | build
+  | dist
+  | node_modules
+  | \.wrangler
+  | installer/Output
+)/
+'''
+
+[tool.ruff]
+line-length = 88
+target-version = "py314"
+exclude = [
+    ".git",
+    ".venv",
+    ".docs-venv",
+    "build",
+    "dist",
+    "node_modules",
+    ".wrangler",
+    "installer/Output",
+]

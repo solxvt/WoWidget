@@ -1,0 +1,26 @@
+from wowidget.version import APP_VERSION
+
+WORKER_BASE_URL = "https://wowidget-portrait-upload.wowidget.workers.dev"
+
+GITHUB_REPOSITORY = "solxvt/WoWidget"
+GITHUB_REPOSITORY_URL = f"https://github.com/{GITHUB_REPOSITORY}"
+GITHUB_LATEST_RELEASE_API_URL = (
+    f"https://api.github.com/repos/{GITHUB_REPOSITORY}/releases/latest"
+)
+GITHUB_API_VERSION = "2026-03-10"
+
+DISCORD_API_VERSION = 10
+DISCORD_WIDGET_API_VERSION = 9
+DISCORD_USER_AGENT = f"WoWidget/{APP_VERSION}"
+
+DISCORD_OAUTH_CALLBACK_HOST = "127.0.0.1"
+DISCORD_OAUTH_CALLBACK_PORT = 5001
+DISCORD_OAUTH_CALLBACK_PATH = "/callback"
+DISCORD_OAUTH_REDIRECT_URI = (
+    f"http://{DISCORD_OAUTH_CALLBACK_HOST}:"
+    f"{DISCORD_OAUTH_CALLBACK_PORT}{DISCORD_OAUTH_CALLBACK_PATH}"
+)
+DISCORD_OAUTH_SCOPES = "identify openid sdk.social_layer"
+DISCORD_OAUTH_AUTHORIZE_URL = "https://discord.com/oauth2/authorize"
+DISCORD_OAUTH_TOKEN_URL = "https://discord.com/api/oauth2/token"
+DISCORD_OAUTH_TIMEOUT_SECONDS = 180
