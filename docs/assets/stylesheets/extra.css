@@ -2820,3 +2820,32 @@ a.about-social-card:hover {
   }
 }
 
+.md-typeset .ww-home__copy h1 {
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+
+@media screen and (min-width: 1600px) {
+  .ww-home {
+    width: min(1640px, 100%);
+  }
+
+  .ww-home__hero {
+    grid-template-columns: minmax(560px, .9fr) minmax(680px, 1.1fr);
+    gap: clamp(4rem, 5vw, 6.5rem);
+  }
+
+  .ww-home__copy {
+    max-width: 680px;
+  }
+
+  .md-typeset .ww-home__copy h1 {
+    max-width: 680px;
+    font-size: clamp(4.5rem, 4.35vw, 5.5rem);
+  }
+
+  .ww-home__widget-stage {
+    padding-inline: clamp(1rem, 2vw, 2rem);
+  }
+}
