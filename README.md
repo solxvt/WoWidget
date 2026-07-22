@@ -6,6 +6,12 @@ character information to Discord profile widgets.
 It retrieves supported character data from Blizzard, prepares a custom
 portrait, and updates the User Variables configured in Discord's Widget Editor.
 
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
+[![Latest Release](https://img.shields.io/github/v/release/solxvt/WoWidget?include_prereleases&sort=semver)](https://github.com/solxvt/WoWidget/releases/latest)
+[![Documentation](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://solxvt.github.io/WoWidget/)
+[![Deploy Documentation](https://github.com/solxvt/WoWidget/actions/workflows/docs.yml/badge.svg)](https://github.com/solxvt/WoWidget/actions/workflows/docs.yml)
+[![Platform](https://img.shields.io/badge/platform-Windows-0078D4)](#installation)
+
 ## Documentation
 
 Setup instructions, variable references, FAQs, and troubleshooting are
