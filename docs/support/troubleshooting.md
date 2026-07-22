@@ -672,7 +672,7 @@ hide:
             <li>Select <strong>Save Portrait</strong>, then update the widget and review the result.</li>
             <li>Repeat as needed; saving another crop does not require regenerating the raw render.</li>
           </ol>
-          <p><a href="../using-wowidget/portrait-studio/">Open the Portrait Studio guide →</a></p>
+          <p><a href="../../using-wowidget/portrait-studio/">Open the Portrait Studio guide →</a></p>
         </div>
       </div>
     </details>
