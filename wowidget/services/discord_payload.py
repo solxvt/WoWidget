@@ -262,6 +262,15 @@ def build_discord_payload(
         ),
     )
 
+    _append_image_field(
+        dynamic_fields,
+        name="a_icon",
+        url=widget_data.get(
+            "achievement_icon_url",
+            "",
+        ),
+    )
+
     return {
         "data": {
             "dynamic": dynamic_fields,

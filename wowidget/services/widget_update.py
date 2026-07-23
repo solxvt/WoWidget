@@ -4,6 +4,7 @@ from datetime import datetime
 from typing import Any
 
 from wowidget.assets.wow_assets import (
+    get_achievement_icon,
     get_faction_icon,
     get_spec_icon,
 )
@@ -211,17 +212,14 @@ class WidgetUpdateService:
 
         discord_client_secret = self.storage.load_discord_client_secret()
 
-        # Ensure the user has completed Discord OAuth and
-        # refresh the authorization automatically when needed.
+       
         self.discord_oauth_service.ensure_access_token(
             storage=self.storage,
             application_id=settings.discord_application_id,
             client_secret=discord_client_secret,
         )
 
-        # Discord's widget profile update is authenticated
-        # as the application bot after the user has authorized
-        # that application.
+
         discord_bot_token = self.storage.load_discord_bot_token()
 
         checked_at = self._current_timestamp()
@@ -265,6 +263,8 @@ class WidgetUpdateService:
         )
 
         widget_data["faction_icon_url"] = get_faction_icon(faction_name)
+
+        widget_data["achievement_icon_url"] = get_achievement_icon()
 
         payload = build_discord_payload(widget_data)
 

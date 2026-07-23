@@ -55,6 +55,9 @@ SPEC_ICONS: Final[dict[tuple[str, str], str]] = {
 }
 
 
+ACHIEVEMENT_ICON: Final[str] = "icons/achievements-icon.png"
+
+
 FACTION_ICONS: Final[dict[str, str]] = {
     "Alliance": "factions/Alliance.png",
     "Horde": "factions/horde.png",
@@ -109,3 +112,7 @@ def get_faction_icon(
             return build_asset_url(relative_path)
 
     return ""
+
+
+def get_achievement_icon() -> str:
+    return build_asset_url(ACHIEVEMENT_ICON)

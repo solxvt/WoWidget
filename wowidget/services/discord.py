@@ -16,9 +16,7 @@ class DiscordService:
     WIDGET_API_BASE_URL = f"https://discord.com/api/v{DISCORD_WIDGET_API_VERSION}"
     USER_AGENT = DISCORD_USER_AGENT
 
-    # --------------------------------------------------
-    # Credential Validation
-    # --------------------------------------------------
+
 
     def validate_credentials(
         self,
@@ -75,9 +73,7 @@ class DiscordService:
             f"{application_name} verified.",
         )
 
-    # --------------------------------------------------
-    # Widget User Data
-    # --------------------------------------------------
+
 
     def push_widget_data(
         self,

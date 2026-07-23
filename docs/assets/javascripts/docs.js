@@ -42,8 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// FAQ live search. Kept independent from troubleshooting search so both pages
-// can evolve without sharing fragile selectors or markup assumptions.
 document.addEventListener("DOMContentLoaded", () => {
   const input = document.querySelector("#faq-search");
   if (!input) return;
@@ -94,9 +92,6 @@ document.addEventListener("DOMContentLoaded", () => {
   filter();
 });
 
-// Troubleshooting knowledge-base search and category filtering.
-// This is intentionally isolated from the FAQ filter because each page has
-// different markup and interaction requirements.
 (() => {
   const initializeTroubleshooting = () => {
     const input = document.querySelector("#troubleshooting-search");
@@ -172,7 +167,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (typeof document$ !== "undefined") document$.subscribe(initializeTroubleshooting);
 })();
 
-// Builds desktop dropdowns from Material's own nested navigation tree.
 (() => {
   const descriptions = {
     "Installation": "Download and install WoWidget.",
@@ -305,7 +299,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (trigger.dataset.wwChecked === "true") return;
       const children = getChildren(trigger);
       trigger.dataset.wwChecked = "true";
-      if (!children.length) return; // Home and About remain normal links.
+      if (!children.length) return; 
 
       trigger.dataset.wwHasMenu = "true";
       trigger.dataset.wwMenuOpen = "false";
@@ -327,7 +321,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const initialize = () => {
     enhanceTabs();
-    // Material can rebuild navigation after instant page changes.
     const observer = new MutationObserver(enhanceTabs);
     const tabs = document.querySelector(".md-tabs");
     const drawer = document.querySelector(".md-nav--primary");

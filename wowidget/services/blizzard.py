@@ -14,10 +14,6 @@ class BlizzardService:
         self._access_token = ""
         self._token_expires_at = 0.0
 
-    # --------------------------------------------------
-    # Authentication
-    # --------------------------------------------------
-
     def validate_credentials(
         self,
         client_id: str,
@@ -111,9 +107,6 @@ class BlizzardService:
 
         return access_token
 
-    # --------------------------------------------------
-    # Normalization
-    # --------------------------------------------------
 
     @staticmethod
     def normalize_realm(realm: str) -> str:
@@ -123,9 +116,7 @@ class BlizzardService:
     def normalize_character(character: str) -> str:
         return character.strip().lower()
 
-    # --------------------------------------------------
-    # Generic Blizzard Request
-    # --------------------------------------------------
+
 
     def _get_json(
         self,
@@ -208,9 +199,7 @@ class BlizzardService:
         parsed_url = urlparse(url)
         return parsed_url.path
 
-    # --------------------------------------------------
-    # Basic Character Lookup
-    # --------------------------------------------------
+
 
     def get_character_profile(
         self,
@@ -268,9 +257,7 @@ class BlizzardService:
             "guild": (guild.get("name") or "---"),
         }
 
-    # --------------------------------------------------
-    # Full Widget Data Bundle
-    # --------------------------------------------------
+
 
     def get_character_bundle(
         self,

@@ -106,6 +106,7 @@ hide:
         <tr><td>Raid Progress</td><td><span class="type-chip type-chip--text">Text</span></td><td><code>raid_score</code></td><td>Combined current-season raid progression.</td></tr>
         <tr><td>Achievements</td><td><span class="type-chip">Number</span></td><td><code>a_score</code></td><td>Total achievement points.</td></tr>
         <tr><td>Achievements (Exact)</td><td><span class="type-chip type-chip--text">Text</span></td><td><code>a_score2</code></td><td>Exact achievement points with thousands separators, such as <code>27,345</code>.</td></tr>
+        <tr><td>Achievements Icon</td><td><span class="type-chip">Image</span></td><td><code>a_icon</code></td><td>Achievement icon for use alongside either Achievements field.</td></tr>
         <tr><td>Mounts</td><td><span class="type-chip">Number</span></td><td><code>mount_score</code></td><td>Number of collected mounts.</td></tr>
         <tr><td>Pets</td><td><span class="type-chip">Number</span></td><td><code>pet_score</code></td><td>Number of collected companion pets.</td></tr>
         <tr><td>Titles</td><td><span class="type-chip">Number</span></td><td><code>title_score</code></td><td>Number of unlocked character titles.</td></tr>

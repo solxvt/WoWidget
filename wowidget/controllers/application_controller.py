@@ -148,10 +148,6 @@ class ApplicationController:
 
         self._build_tray()
 
-    # --------------------------------------------------
-    # Tray
-    # --------------------------------------------------
-
     def _build_tray(self) -> None:
         icon = get_application_icon()
 
@@ -214,10 +210,6 @@ class ApplicationController:
             icon,
             5000,
         )
-
-    # --------------------------------------------------
-    # State checks
-    # --------------------------------------------------
 
     def _credentials_are_complete(self) -> bool:
         try:
@@ -302,10 +294,6 @@ class ApplicationController:
         }
 
         return descriptions[state]
-
-    # --------------------------------------------------
-    # Initial setup
-    # --------------------------------------------------
 
     def handle_setup_save(
         self,
@@ -501,10 +489,6 @@ class ApplicationController:
         )
         self.window.setup_page.set_authorization_ready(True)
 
-    # --------------------------------------------------
-    # Discord OAuth authorization
-    # --------------------------------------------------
-
     def handle_discord_authorize(
         self,
     ) -> None:
@@ -678,10 +662,6 @@ class ApplicationController:
             is_error=True,
         )
 
-    # --------------------------------------------------
-    # Character lookup and selection
-    # --------------------------------------------------
-
     def handle_character_search(
         self,
         values: dict,
@@ -846,10 +826,6 @@ class ApplicationController:
                 "Use This Character."
             )
         )
-
-    # --------------------------------------------------
-    # Portrait studio
-    # --------------------------------------------------
 
     def handle_generate_portrait(
         self,
@@ -1150,10 +1126,6 @@ class ApplicationController:
 
         self.window.show_portrait(portrait_path)
 
-    # --------------------------------------------------
-    # Manual widget update
-    # --------------------------------------------------
-
     def handle_manual_widget_update(
         self,
     ) -> None:
@@ -1243,10 +1215,6 @@ class ApplicationController:
     ) -> None:
         self.widget_update_in_progress = False
         self.window.set_widget_update_busy(False)
-
-    # --------------------------------------------------
-    # Automatic scheduler
-    # --------------------------------------------------
 
     def handle_updates_toggle(
         self,
@@ -1455,10 +1423,6 @@ class ApplicationController:
         else:
             self._stop_update_timer()
 
-    # --------------------------------------------------
-    # Settings
-    # --------------------------------------------------
-
     def handle_open_settings(
         self,
     ) -> None:
@@ -1664,10 +1628,6 @@ class ApplicationController:
 
         webbrowser.open(folder.as_uri())
 
-    # --------------------------------------------------
-    # Update checking
-    # --------------------------------------------------
-
     def handle_manual_update_check(
         self,
     ) -> None:
@@ -1825,10 +1785,6 @@ class ApplicationController:
                 new=2,
             )
 
-    # --------------------------------------------------
-    # Startup preferences
-    # --------------------------------------------------
-
     def set_launch_with_windows(
         self,
         enabled: bool,
@@ -1884,10 +1840,6 @@ class ApplicationController:
                 self.storage.save_settings(self.settings)
             except Exception:
                 pass
-
-    # --------------------------------------------------
-    # Worker management and UI refresh
-    # --------------------------------------------------
 
     def _start_worker(
         self,

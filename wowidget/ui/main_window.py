@@ -595,11 +595,9 @@ class MainWindow(QMainWindow):
         self,
     ) -> dict:
         return {
-            # The UI displays adjustments relative to the
-            # established default composition.
+
             "scale_percent": (PORTRAIT_SCALE_BASE + self.scale_spinbox.value()),
             "x_offset": (PORTRAIT_X_BASE + self.x_spinbox.value()),
-            # Positive UI values move the character upward.
             "y_offset": (PORTRAIT_Y_BASE - self.y_spinbox.value()),
         }
 

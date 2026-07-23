@@ -28,9 +28,7 @@ class StorageManager:
         self.database = SettingsDatabase()
         self.credentials = CredentialStore()
 
-    # --------------------------------------------------
-    # Settings
-    # --------------------------------------------------
+
 
     def load_settings(self) -> WidgetSettings:
         return self.database.load_settings()
@@ -41,9 +39,7 @@ class StorageManager:
     ) -> None:
         self.database.save_settings(settings)
 
-    # --------------------------------------------------
-    # Portrait compositions
-    # --------------------------------------------------
+
 
     def load_portrait_composition(
         self,
@@ -57,9 +53,7 @@ class StorageManager:
     ) -> None:
         self.database.save_portrait_composition(composition)
 
-    # --------------------------------------------------
-    # Discord credentials
-    # --------------------------------------------------
+
 
     def save_discord_credentials(
         self,
@@ -78,9 +72,7 @@ class StorageManager:
     def load_discord_client_secret(self) -> str:
         return self.credentials.load_discord_client_secret()
 
-    # --------------------------------------------------
-    # Discord OAuth authorization
-    # --------------------------------------------------
+
 
     def save_discord_oauth(
         self,
@@ -131,9 +123,7 @@ class StorageManager:
         ):
             self.credentials.delete(key)
 
-    # --------------------------------------------------
-    # Blizzard credentials
-    # --------------------------------------------------
+
 
     def save_blizzard_credentials(
         self,
@@ -152,9 +142,7 @@ class StorageManager:
     def load_blizzard_client_secret(self) -> str:
         return self.credentials.load_blizzard_client_secret()
 
-    # --------------------------------------------------
-    # Cloudflare Worker installation credential
-    # --------------------------------------------------
+
 
     def save_worker_install_token(
         self,
@@ -165,9 +153,7 @@ class StorageManager:
     def load_worker_install_token(self) -> str:
         return self.credentials.load_worker_install_token()
 
-    # --------------------------------------------------
-    # Reset helpers
-    # --------------------------------------------------
+
 
     def clear_discord_credentials(self) -> None:
         self.credentials.delete(DISCORD_BOT_TOKEN)
