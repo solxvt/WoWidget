@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.1
+
+- Added support for the `a_icon` Discord User Variable for achievement icons.
+- Added achievement icon configuration to the Widget Editor documentation.
+- Documented the `a_icon` widget variable in the reference guide.
+- Added the achievement icon asset for Discord widget rendering.
+
 ## 1.0.0 — Release Candidate 1
 
 - Standardized public Discord User Variable names across the application and
