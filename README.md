@@ -23,7 +23,7 @@ https://solxvt.github.io/WoWidget/
 
 `character_model`, `character_name`, `character_level`, `race_class`, `realm`,
 `guild`, `faction_icon`, `spec_name`, `spec_icon`, `gear_score`,
-`mythic_score`, `pvp_score`, `raid_score`, `a_score`, `mount_score`,
+`mythic_score`, `mythic_score2`, `pvp_score`, `raid_score`, `a_score`, `a_score2`, `a_icon`, `mount_score`,
 `pet_score`, `title_score`, `feats_score`, `rep_score`, and `last_login`.
 
 Variable names are case-sensitive. Their Discord Presentation Types must match
