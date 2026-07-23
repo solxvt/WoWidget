@@ -4,7 +4,7 @@ $ProjectRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 Set-Location $ProjectRoot
 
 Write-Host ""
-Write-Host "Building WoWidget 1.0.0..." -ForegroundColor Cyan
+Write-Host "Building WoWidget 1.0.1..." -ForegroundColor Cyan
 Write-Host ""
 
 if (-not (Test-Path ".venv\Scripts\python.exe")) {

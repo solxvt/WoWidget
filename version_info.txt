@@ -20,11 +20,11 @@ VSVersionInfo(
               "FileDescription",
               "World of Warcraft Discord Widget Manager"
             ),
-            StringStruct("FileVersion", "1.0.0"),
+            StringStruct("FileVersion", "1.0.1"),
             StringStruct("InternalName", "WoWidget"),
             StringStruct("OriginalFilename", "WoWidget.exe"),
             StringStruct("ProductName", "WoWidget"),
-            StringStruct("ProductVersion", "1.0.0")
+            StringStruct("ProductVersion", "1.0.1")
           ]
         )
       ]
