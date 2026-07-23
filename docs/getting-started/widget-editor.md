@@ -171,3 +171,6 @@ hide:
   <figure class="doc-screenshot"><img src="../../assets/images/widget/09-save-publish.png" alt="Discord Widget Editor Save Changes and Publish controls" loading="lazy"><figcaption>Save the configuration, then publish the widget.</figcaption></figure>
 </section>
 
+!!! tip "Enable Developer Mode"
+    If you followed these steps and still can't add the widget to your Discord profile, make sure you have Devloper Mode enabled in your discord settings. Because these features are considered 'Experimental', the developer mode must be enabled to use them.  
+
